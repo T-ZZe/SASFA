@@ -14,8 +14,8 @@ jobs:
           distribution: temurin
           java-version: '25'
       - name: Build
-        run: mvn -B -f SkillTree/pom.xml package
+        run: mvn -B -f "SkillTree-projet (1)/SkillTree/pom.xml" package
       - uses: actions/upload-artifact@v4
         with:
           name: SkillTree
-          path: SkillTree/target/SkillTree-*.jar
+          path: "SkillTree-projet (1)/SkillTree/target/SkillTree-*.jar"
